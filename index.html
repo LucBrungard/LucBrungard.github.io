@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/index.css">
+        <title>PorteFolio Luc BRUNGARD</title>
+
+        <script>
+            function roule(varchar) {
+                var element = document.getElementById(varchar);
+                
+                if (element.classList.contains('doitDisparaitre') || !element.classList.contains('doitApparaitre')) {
+                    element.classList.remove('doitDisparaitre');
+                    element.classList.add('doitApparaitre');
+                    document.getElementById(varchar+'roule').src="img/deroule.png";
+                }
+                else {
+                    element.classList.remove('doitApparaitre');
+                    element.classList.add('doitDisparaitre');
+                    document.getElementById(varchar+'roule').src="img/enroule.png";
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="nav-items"><a href="index.html"><img src="img/accueil.png" alt="accueil">Accueil</a></li>
+                <li class="nav-items"><a href="common/CV.html"><img src="img/profil.png" alt="presentation">Présentation</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <div id="title">
+                <h1 style="text-align:center;">Luc BRUNGARD</h1>
+                <h2 style="text-align:center; font-style: italic;">Etudiant</h2>
+            </div>
+        </header>
+
+        
+        <div id="projets">
+            <div class="semestre">
+                <h2>Semestre 1</h2>
+                <div class="projet">
+                    <a onclick="roule('projetC')"><h2>Projet Nim <img src="img/enroule.png" id="projetCroule"></a> </h2>
+                    <div class="horstitre" id="projetC">
+                        <p>Mise en application des acquis dans le domaine de l'analyse et de la programmation dans un travail de groupe </p>
+                        <img style="height: 400px;" src="img/projets/nim.PNG">
+                        <p class="description">Durée : 6 semaines</p>
+                        <p class="description">Groupe : 3 personnes</p>
+    
+                        <div class="pied">
+                            <div class="language">
+                                <label>Langage C</label>
+                            </div>
+                            <div class="liens">
+                                <a href="https://github.com/LucBrungard/ProjetC_Nim" target="_blank"><img src="img/github.svg.png" alt="Github" id="git"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="projet">
+                    <a onclick="roule('prjWebS1')"><h2>Développement d’un site web statique <img src="img/enroule.png" id="prjWebS1roule"></a> </h2>
+                    <div class="horstitre" id="prjWebS1">
+                        <p>Développement des compétences relationnelles et l’autonomie dans le travail</p>
+                        <img style="height: 400px;" src="img/projets/prjtutS1.PNG">
+                        <p class="description">Durée : 5 semaines</p>
+                        <p class="description">Groupe : 4 personnes</p>
+    
+                        <div class="pied">
+                            <div class="language">
+                                <label>HTML 5</label>
+                                <label>CSS 3</label>
+                            </div>
+                            <div class="liens">
+                                <a href="https://github.com/LucBrungard/Projet_tut_Web_S1" target="_blank"><img src="img/github.svg.png" alt="Github" id="git"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="semestre">
+                <h2>Semestre 2</h2>
+                <div class="projet">
+                    <a onclick="roule('videotheque')"><h2>Réalisation d'un logiciel de gestion d'une vidéothèque <img src="img/enroule.png" id="videothequeroule"></a> </h2>
+                    <div class="horstitre" id="videotheque">
+                        <p>Modélisation complète d'un problème avec UML et sa mise en œuvre en Java</p>
+                        <img style="height: 400px;" src="img/projets/videotheque.png">
+                        <p class="description">Durée : 10 semaines</p>
+                        <p class="description">Groupe : 2 personnes</p>
+                        <div class="pied">
+                            <div class="language">
+                                <label>Java</label>
+                            </div>
+                            <div class="liens">
+                                <a href="https://github.com/LucBrungard/Projet_Java_Videotheque" target="_blank"><img src="img/github.svg.png" alt="Github" id="git"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="semestre">
+                <h2>Semestre 3</h2>
+                <div class="projet" >
+                    <a onclick="roule('prjCPOA')"><h2>Projet CPOA <img src="img/enroule.png" id="prjCPOAroule"></a> </h2>
+                    <div class="horstitre" id="prjCPOA">
+                        <p>Développer un logiciel en suivant les préceptes de l'agilité et mettant en œuvre un ensemble de bonnes pratiques</p>
+                        <img style="height: 400px;" src="img/projets/cpoa.PNG.jpg">
+                        <p class="description">Durée : 8 semaines</p>
+                        <p class="description">Groupe : 2 personnes</p>
+    
+                        <div class="pied">
+                            <div class="language">
+                                <label>Java</label> <label>JavaFX</label> <label>JUnit</label> <label>mySQL</label> <label>git</label>
+                            </div>
+                            <div class="liens">
+                                <a href="https://github.com/LucBrungard/CPOA_THIL_BRUNGARD_Projet" target="_blank"><img src="img/github.svg.png" alt="Github" id="git"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="projet" >
+                    <a onclick="roule('prjTut2020')"><h2>Projet tutoré 2020 <img src="img/enroule.png" id="prjTut2020roule"></a> </h2>
+                    <div class="horstitre" id="prjTut2020">
+                        <p>Développer une application pour aider les chefs de département à la gestion des enseignements</p>
+                        <p class="description">Durée : 8 semaines</p>
+                        <p class="description">Groupe : 5 personnes</p>
+    
+                        <div class="pied">
+                            <div class="language">
+                                <label>API</label> <label>C#</label> <label>PHP</label> <label>SQL</label>
+                            </div>
+                            <div class="liens">
+                                <a href="https://github.com/WildGoat07/Projet-tut-2020" target="_blank"><img src="img/github.svg.png" alt="Github" id="git"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <footer>
+            <a href="https://goo.gl/maps/uCknrMCb85k9t1Pz6" target="_blank">
+                <img src="img/location.png" alt="Adresse" id="location">
+            </a>
+            <a href="mailto:luc.brungard@laposte.net" target="_blank">
+                <img src="img/mail.png" alt="Mail" id="mail">
+            </a>
+            <a href="https://github.com/LucBrungard" target="_blank">
+                <img src="img/github.svg.png" alt="Github" id="git">
+            </a>
+            <a href="tel:+33782143752" target="_blank">
+                <img src="img/contact.png" alt="Téléphone" id="tel">
+            </a>
+            <a>
+                <span title="Luc#0239">
+                    <img src="img/discord.png" alt="Discord" id="discord">
+                </span>
+            </a>
+        </footer>
+
+    </body>
+
+    
+</html>
