@@ -11,7 +11,7 @@ header {
 #title {
     font-size: 30px;
     margin: auto;
-    color: rgb(255, 193, 60);
+    color: rgb(221, 213, 213);
 }
 
 .sidebar-nav {
@@ -43,7 +43,7 @@ header {
 
 .nav-items a {
     text-decoration: none;
-    color: #FF7702;
+    color:rgba(255, 150, 60, 1);
 }
 
 .nav-items, .cv h2, .pied a {
@@ -65,7 +65,7 @@ header {
     color: rgb(221, 213, 213);
     width: 90%;
     border-left: 5px rgba(255, 150, 60, 1) solid;
-
+    padding-top: 3px;
     margin: 100px 0 100px 50px;
 }
 
@@ -201,6 +201,6 @@ footer img:hover, .pied img:hover {
 }
 
 .semestre {
-    color: rgb(235, 232, 232);
+    color: rgb(221, 213, 213);
     font-size: 22px;
 }
