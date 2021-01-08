@@ -92,7 +92,7 @@ header {
 
 .projet .pied {
     margin-top: 20px;
-    width: 60%;
+    width: 75%;
     border-top: 2px rgba(255, 150, 60, 1) solid;
     padding: 10px;
     display: inline-block;
@@ -110,6 +110,7 @@ header {
     width: 50%;
     float: left;
     text-align: left;
+    margin-top: 5px;
 }
 
 .pied .liens {
@@ -118,15 +119,12 @@ header {
     text-align:right;
 }
 
-.pied #git {
-    margin-left: 30px;
-}
+
 
 .pied label {
     padding: 5px;
     background-color: rgba(255, 150, 60, 0.8);
     border-radius: 5px;
-    margin-top: 0;
 }
 
 #projetCroule, #videothequeroule, #prjCPOAroule, #prjTut2020roule, #prjWebS1roule {
@@ -135,29 +133,69 @@ header {
 }
 
 .doitApparaitre {
+    -webkit-animation: deroule 0.6s linear 1 forwards;
+    -moz-animation: deroule 0.6s linear 1 forwards;
+    -o-animation: deroule 0.6s linear 1 forwards;
+    -ms-animation: deroule 0.6s linear 1 forwards;
     animation: deroule 0.6s linear 1 forwards;
 }
 
 .doitDisparaitre {
+    -webkit-animation: enroule 0.6s linear 1 forwards;
+    -moz-animation: enroule 0.6s linear 1 forwards;
+    -o-animation: enroule 0.6s linear 1 forwards;
+    -ms-animation: enroule 0.6s linear 1 forwards;
     animation: enroule 0.6s linear 1 forwards;
 }
 
+@-webkit-keyframes enroule {
+    0%      { max-height: 100%; }
+    100%    { max-height: 0; }
+}
+
+@-moz-keyframes enroule {
+    0%      { max-height: 100%; }
+    100%    { max-height: 0; }
+}
+
+@-o-keyframes enroule {
+    0%      { max-height: 100%; }
+    100%    { max-height: 0; }
+}
+
+@-ms-keyframes enroule {
+    0%      { max-height: 100%; }
+    100%    { max-height: 0; }
+}
+
 @keyframes enroule {
-    from {
-        max-height: 100%;
-    }
-    to {
-        max-height: 0;
-    }
+    0%      { max-height: 100%; }
+    100%    { max-height: 0; }
+}
+
+@-webkit-keyframes deroule {
+    0%      { max-height: 0; }
+    100%    { max-height: 100%; }
+}
+
+@-moz-keyframes deroule {
+    0%      { max-height: 0; }
+    100%    { max-height: 100%; }
+}
+
+@-o-keyframes deroule {
+    0%      { max-height: 0; }
+    100%    { max-height: 100%; }
+}
+
+@-ms-keyframes deroule {
+    0%      { max-height: 0; }
+    100%    { max-height: 100%; }
 }
 
 @keyframes deroule {
-    from {
-        max-height: 0;
-    }
-    to {
-        max-height: 100%;
-    }
+    0%      { max-height: 0; }
+    100%    { max-height: 100%; }
 }
 
 a:hover {
