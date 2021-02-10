@@ -1,174 +1,194 @@
 <html>
     <head>
-        <link rel="stylesheet" href="css/index.css">
-        <meta charset="UTF-8">
-        <title>PorteFolio Luc BRUNGARD</title>
-        
-
+        <link rel="stylesheet" href="./css/index.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Luc BRUNGARD Accueil</title>
         <script>
-            function roule(varchar) {
-                var element = document.getElementById(varchar);
+            function age() {
+                const DAY_TIME = 3600 * 24 * 1000;
+                const today = new Date();
                 
-                if (element.classList.contains('doitDisparaitre') || !element.classList.contains('doitApparaitre')) {
-                    element.classList.remove('doitDisparaitre');
-                    element.classList.add('doitApparaitre');
-                    document.getElementById(varchar+'roule').src="img/deroule.png";
+                // date de référence
+                let dateRef = new Date("2001", "11", "28", "0", "0", "0");
+                // objet résultat
+                const ecart = {
+                years: 0,
+                months: 0,
+                days: 0,
+                hours: 0,
+                minutes: 0,
+                seconds: 0,
+                inDays: 0
+                };
+                
+                // calcul en jours pleins
+                ecart.inDays = ((today.getTime() - dateRef.getTime()) / DAY_TIME) >> 0;
+                
+                // nombre d'années complétes
+                // on se place sur l'année suivante
+                dateRef.setFullYear(dateRef.getFullYear() + 1);
+                while (dateRef < today) {
+                    ecart.years += 1;
+                    dateRef.setFullYear(dateRef.getFullYear() + 1);
                 }
-                else {
-                    element.classList.remove('doitApparaitre');
-                    element.classList.add('doitDisparaitre');
-                    document.getElementById(varchar+'roule').src="img/enroule.png";
+                // réajuste la date en sortie de boucle
+                dateRef.setFullYear(dateRef.getFullYear() - 1);
+                
+                // nombre de mois complets
+                // on se place sur le mois suivant
+                dateRef.setMonth(dateRef.getMonth() + 1);
+                while (dateRef < today) {
+                    ecart.months += 1;
+                    dateRef.setMonth(dateRef.getMonth() + 1);
                 }
+                // réajuste la date en sortie de boucle
+                dateRef.setMonth(dateRef.getMonth() - 1);
+                
+                // nombre de jours complets
+                // on se place sur le jour suivant
+                dateRef.setDate(dateRef.getDate() + 1);
+                while (dateRef < today) {
+                    ecart.days += 1;
+                    dateRef.setDate(dateRef.getDate() + 1);
+                }
+                dateRef.setDate(dateRef.getDate() - 1);
 
-                // element.classList.forEach(oui => alert(oui));
+                dateRef.setHours(dateRef.getHours() + 1);
+                while (dateRef < today) {
+                    ecart.hours += 1;
+                    dateRef.setHours(dateRef.getHours() + 1);
+                }
+                dateRef.setHours(dateRef.getHours() - 1);
+
+                dateRef.setMinutes(dateRef.getMinutes() + 1);
+                while (dateRef < today) {
+                    ecart.minutes += 1;
+                    dateRef.setMinutes(dateRef.getMinutes() + 1);
+                }
+                dateRef.setMinutes(dateRef.getMinutes()-+ 1);
+
+                dateRef.setSeconds(dateRef.getSeconds() + 1);
+                while (dateRef < today) {
+                    ecart.seconds += 1;
+                    dateRef.setSeconds(dateRef.getSeconds() + 1);
+                }
+                dateRef.setSeconds(dateRef.getSeconds() - 1);
+
+                document.getElementById("age").innerHTML = "Âge : " + ecart.years + " années " + ecart.months + " mois " + ecart.days + (ecart.days>1?" jours " : " jour");
+                //  + ecart.hours + " heures " + ecart.minutes + " minutes " + ecart.seconds + " secondes "
+
+                setTimeout(age, 6000);
             }
         </script>
     </head>
     
     <body>
         <nav class="sidebar-nav">
-            <ul>
-                <li class="nav-items"><a href="index.html"><img src="img/accueil.png" alt="accueil">Accueil</a></li>
-                <li class="nav-items"><a href="common/CV.html"><img src="img/profil.png" alt="presentation">Présentation</a></li>
-            </ul>
+            <div class="nav-items">
+                <a href="index.html"><img src="img/accueil.png" alt="accueil"> Accueil </a>
+            </div>
+            <div class="nav-items">
+                <a href="common/projects.html"><img src="img/portefolio.png" alt="portefolio">Portefolio</a>
+            </div>
         </nav>
 
-        <header>
-            <div id="title">
-                <h1 style="text-align:center;">Luc BRUNGARD</h1>
-                <h2 style="text-align:center; font-style: italic;">Etudiant</h2>
-            </div>
-        </header>
+        <img id="profil" src="img/luc.png" alt="photo de profil">
 
-        
-        <div id="projets">
-            <div class="semestre">
-                <h2>Semestre 1</h2>
-                <div class="projet">
-                    <a onclick="roule('projetC')"><h2>Projet Nim <img src="img/enroule.png" id="projetCroule"></a> </h2>
-                    <div class="horstitre" id="projetC">
-                        <p>Mise en application des acquis dans le domaine de l'analyse et de la programmation dans un travail de groupe </p>
-                        <img style="height: 400px;" src="img/projets/nim.PNG">
-                        <p class="description">Durée : 6 semaines</p>
-                        <p class="description">Groupe : 3 personnes</p>
-    
-                        <div class="pied">
-                            <div class="language">
-                                <label>Langage C</label>
-                            </div>
-                            <div class="liens">
-                                <a href="https://github.com/LucBrungard/ProjetC_Nim" target="_blank"><img src="img/github.svg.png" alt="Github" id="git"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="projet">
-                    <a onclick="roule('prjWebS1')"><h2>Développement d’un site web statique <img src="img/enroule.png" id="prjWebS1roule"></a> </h2>
-                    <div class="horstitre" id="prjWebS1">
-                        <p>Développement des compétences relationnelles et l’autonomie dans le travail</p>
-                        <img style="height: 400px;" src="img/projets/prjtutS1.PNG">
-                        <p class="description">Durée : 5 semaines</p>
-                        <p class="description">Groupe : 4 personnes</p>
-    
-                        <div class="pied">
-                            <div class="language">
-                                <label>HTML 5</label>
-                                <label>CSS 3</label>
-                            </div>
-                            <div class="liens">
-                                <a href="https://github.com/LucBrungard/Projet_tut_Web_S1" target="_blank"><img src="img/github.svg.png" alt="Github" id="git"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="content">
+            <div class="information">
+                <h2>Informations civiles</h2>
+                <ul>
+                    <li>Prénom : Luc</li>
+                    <li>Nom : BRUNGARD</li>
+                    <li id="age"><script>age()</script></li>
+                    <li>Sexe : Homme</li>
+                </ul>
             </div>
-            
-            <div class="semestre">
-                <h2>Semestre 2</h2>
-                <div class="projet">
-                    <a onclick="roule('videotheque')"><h2>Réalisation d'un logiciel de gestion d'une vidéothèque <img src="img/enroule.png" id="videothequeroule"></a> </h2>
-                    <div class="horstitre" id="videotheque">
-                        <p>Modélisation complète d'un problème avec UML et sa mise en œuvre en Java</p>
-                        <img style="height: 400px;" src="img/projets/videotheque.png">
-                        <p class="description">Durée : 10 semaines</p>
-                        <p class="description">Groupe : 2 personnes</p>
-                        <div class="pied">
-                            <div class="language">
-                                <label>Java</label>
-                            </div>
-                            <div class="liens">
-                                <a href="https://github.com/LucBrungard/Projet_Java_Videotheque" target="_blank"><img src="img/github.svg.png" alt="Github" id="git"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+            <div class="information">
+                <h2>Education</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="enteteTab">2019 - 2021</td> <td class="colGauche enteteTab">DUT Informatique</td>
+                        </tr>
+                        <tr>
+                            <td></td> <td class="colGauche">IUT de Metz Université de Lorraine, <br> Metz, France</td>
+                        </tr>
+                        <tr>
+                            <td></td> <td class="colGauche">Classement de la 1<sup>ère</sup> année : 9/97</td>
+                        </tr>
+                        <tr>
+                            <td></td> <td class="colGauche">Actuellement en 2<sup>ème</sup> année</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="enteteTab">2016 - 2019</td> <td class="colGauche enteteTab">Baccalauréat général et technologique</td>
+                        </tr>
+                        <tr>
+                            <td></td> <td class="colGauche">Lycée Louis Vincent, <br> Metz, France</td>
+                        </tr>
+                        <tr>
+                            <td></td> <td class="colGauche">Spécialisation en Sciences de l'ingénieur et Informatique</td>
+                        </tr>
+                        <tr>
+                            <td></td> <td class="colGauche">Avec mention bien</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            
-            <div class="semestre">
-                <h2>Semestre 3</h2>
-                <div class="projet" >
-                    <a onclick="roule('prjCPOA')"><h2>Projet CPOA <img src="img/enroule.png" id="prjCPOAroule"></a> </h2>
-                    <div class="horstitre" id="prjCPOA">
-                        <p>Développer un logiciel en suivant les préceptes de l'agilité et mettant en œuvre un ensemble de bonnes pratiques</p>
-                        <img style="height: 400px;" src="img/projets/cpoa.PNG.jpg">
-                        <p class="description">Durée : 8 semaines</p>
-                        <p class="description">Groupe : 2 personnes</p>
-    
-                        <div class="pied">
-                            <div class="language">
-                                <label>Java</label> 
-                                <label>JavaFX</label> 
-                                <label>JUnit</label> 
-                                <label>mySQL</label> 
-                                <label>git</label>
-                            </div>
-                            <div class="liens">
-                                <a href="https://github.com/LucBrungard/CPOA_THIL_BRUNGARD_Projet" target="_blank"><img src="img/github.svg.png" alt="Github" id="git"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="projet" >
-                    <a onclick="roule('prjTut2020')"><h2>Projet tutoré 2020 <img src="img/enroule.png" id="prjTut2020roule"></a> </h2>
-                    <div class="horstitre" id="prjTut2020">
-                        <p>Développer une application pour aider les chefs de département à la gestion des enseignements</p>
-                        <p class="description">Durée : 8 semaines</p>
-                        <p class="description">Groupe : 5 personnes</p>
-    
-                        <div class="pied">
-                            <div class="language">
-                                <label>API</label> 
-                                <label>C#</label> 
-                                <label>PHP</label> 
-                                <label>SQL</label>
-                            </div>
-                            <div class="liens">
-                                <a href="https://github.com/WildGoat07/Projet-tut-2020" target="_blank"><img src="img/github.svg.png" alt="Github" id="git"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+            <div class="information">
+                <h2>Compétences informatiques</h2>
+                <ul>
+                    <li>Base de données</li>
+                    <li>Python | Java | C</li>
+                    <li>PHP | JavaScript | HTML5 | CSS3</li>
+                    <li>x86 ASM</li>
+                </ul>
             </div>
-            
+
+            <div class="information">
+                <h2>Compétences linguistiques</h2>
+                <ul>
+                    <li>Français : Langue maternelle</li>
+                    <li>Anglais : Intermédiaire</li>
+                    <li>Allemand : Débutant</li>
+                </ul>
+            </div>
+
+            <div class="information">
+                <h2>Loisirs</h2>
+                <ul>
+                    <li>
+                        <img src="img/profil/prog.png" />
+                        Programmation
+                    </li>
+                    <li> <img src="img/profil/sax.png" /> Musique</li>
+                    <li style="font-style:italic">Membre de 3 orchestres</li>
+                    <li> <img src="img/profil/volleyball.png" /> Volleyball</li>
+                    <li> <img src="img/profil/book.png" /> Lecture</li>
+                    <li> <img src="img/profil/videogames.png" /> Jeux vidéo</li>
+                </ul>
+            </div>
         </div>
 
         <footer>
             <a href="mailto:luc.brungard@laposte.net" target="_blank">
-                <img src="../img/mail.png" alt="Mail" id="mail">
+                <img src="img/mail.png" alt="Mail" id="mail">
             </a>
             <a href="https://github.com/LucBrungard" target="_blank">
-                <img src="../img/github.svg.png" alt="Github" id="git">
+                <img src="img/github.svg.png" alt="Github" id="git">
             </a>
             <a>
                 <span title="Luc#0239">
-                    <img src="../img/discord.png" alt="Discord" id="discord">
+                    <img src="img/discord.png" alt="Discord" id="discord">
                 </span>
             </a>
         </footer>
-
     </body>
-
-    
 </html>
