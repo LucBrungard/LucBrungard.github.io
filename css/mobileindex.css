@@ -2,7 +2,7 @@ body {
     background-color: rgb(31, 31, 31);
     /* background-image:url("../img/fond.jpg"); */
     font-family: sans-serif;
-    font-size: 13px;
+    font-size: 20px;
 } 
 
 a:hover {
@@ -58,7 +58,7 @@ a:hover {
     height:max(10vh, 10vw);
     position: absolute;
     top : 35px;
-    right: 25px;
+    right: 10px;
     border-radius: 100%;
 }
 
@@ -66,7 +66,7 @@ table {
     color:rgb(221, 213, 213);
     margin-bottom: 50px;
     margin-left: 20px;
-    font-size: 13px;
+    font-size: 20px;
 }
 
 .colGauche {
@@ -103,7 +103,7 @@ table td {
 
 .information h2 {
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 25px;
 
     color : rgb(255, 150, 60);
     border-bottom: 1px solid rgb(255, 150, 60);
