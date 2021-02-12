@@ -56,11 +56,11 @@ a:hover {
 }
 
 #profil {
-    height:max(10vh, 10vw);
+    width:max(10vh, 10vw);
     position: absolute;
     top : 50px;
     right: 50px;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 table {
