@@ -165,8 +165,10 @@ header > div a {
 }
 
 .projet > div:first-of-type > img:first-of-type {
+  height: min-content(400px, 50vh);
   width: 70vw;
-  object-fit: contain;
+
+  object-fit: scale-down;
 }
 
 .projet > div:first-of-type .description {
