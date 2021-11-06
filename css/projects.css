@@ -311,8 +311,10 @@ footer {
   background-color: var(--sidebar-background-color);
 
   width: 100%;
+  /* Between 40px and 50px */
   min-height: 40px;
   height: 7vh;
+  max-height: 50px;
 
   display: flex;
   flex-direction: row;
@@ -329,7 +331,7 @@ footer > div {
 }
 
 footer > div img {
-  height: max(min(40px, 5vh), 30px);
+  height: max(min(35px, 5vh), 25px);
   transition: transform 0.2s;
 }
 
