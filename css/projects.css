@@ -34,8 +34,10 @@ header {
   background-color: var(--sidebar-background-color);
 
   width: 100%;
+  /* Between 40px and 50px */
   min-height: 40px;
   height: 7vh;
+  max-height: 50px;
 
   padding-left: 2%;
 
@@ -45,7 +47,8 @@ header {
 
   align-items: center;
 
-  font-size: max(2vmax, 17px);
+  /* Between 18px and 22px */
+  font-size: min(22px, max(18px, 1.5vmax));
 }
 
 header > div {
@@ -91,7 +94,8 @@ header > div a {
 
 .semestre {
   color: var(--body-font-color);
-  font-size: max(1.8vmax, 14px);
+  /* Between 14px and 18px */
+  font-size: min(18px, max(14px, 1.6vmax));
   width: 95%;
 }
 
@@ -165,7 +169,7 @@ header > div a {
 }
 
 .projet > div:first-of-type > img:first-of-type {
-  height: min-content(400px, 50vh);
+  height: min(400px, 50vh);
   width: 70vw;
 
   object-fit: scale-down;
@@ -325,7 +329,7 @@ footer > div {
 }
 
 footer > div img {
-  height: 1.8rem;
+  height: max(min(40px, 5vh), 30px);
   transition: transform 0.2s;
 }
 

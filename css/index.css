@@ -33,8 +33,10 @@ header {
   background-color: var(--sidebar-background-color);
 
   width: 100%;
+  /* Between 40px and 50px */
   min-height: 40px;
   height: 7vh;
+  max-height: 50px;
 
   padding-left: 2%;
 
@@ -44,7 +46,8 @@ header {
 
   align-items: center;
 
-  font-size: max(2vmax, 17px);
+  /* Between 18px and 22px */
+  font-size: min(22px, max(18px, 1.5vmax));
 }
 
 header > div {
@@ -173,7 +176,7 @@ footer > div {
 }
 
 footer > div img {
-  height: 1.8rem;
+  height: max(min(40px, 5vh), 30px);
   transition: transform 0.2s;
 }
 
