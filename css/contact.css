@@ -2,6 +2,8 @@
   --body-backgroud-color: rgb(31, 31, 31);
   --sidebar-background-color: rgb(19, 19, 19);
   --header-font-color: #e0e0e0;
+  --projet-background-color: rgb(19, 19, 19);
+  --font-color: rgb(221, 213, 213);
 }
 
 body {
@@ -78,90 +80,44 @@ header > div a {
 /*#endregion*/
 /* END HEADER REGION */
 
-#profil {
-  position: absolute;
-  top: max(min(15vh, 55px), 45px);
-  right: max(3vw, 10px);
-
-  width: max(max(10vh, 10vw), 50px);
-  object-fit: contain;
-  border-radius: 10%;
-}
-
-.content {
-  height: fit-content;
+/* FOOTER REGION */
+/*#region*/
+.contact {
   width: 100%;
+  height: 100%;
 
-  margin-top: max(7vh, 40px);
-  margin-bottom: max(7vh, 40px);
-
-  padding-left: max(3vw, 10px);
+  margin-top: calc(20px + max(40px, min(7vh, 50px)));
+  margin-left: 50px;
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  gap: 30px;
+
+  color: var(--font-color);
 }
 
-.information {
-  width: 70%;
-  font-size: min(18px, max(14px, 1.6vmax));
-  color: rgb(221, 213, 213);
-}
-
-.information h2 {
-  width: 100%;
-
-  font-size: min(22px, max(18px, 1.8vmax));
-
-  color: rgb(255, 150, 60);
-  border-bottom: 2px solid rgb(255, 150, 60);
-}
-
-.information ul {
-  list-style: none;
-  padding-left: min(60px, 3vw);
-}
-
-.information li {
-  margin-bottom: min(7px, 1vh);
-}
-
-.information img {
-  width: 1em;
-}
-
-.formation {
-  padding-left: min(60px, 3vw);
-
+.contact > div > a,
+.contact > div > a > span {
+  width: fit-content;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-
-  margin-bottom: min(max(20px, 2vh), 30px);
+  align-items: center;
 }
 
-.formation > div:first-of-type {
-  max-width: 150px;
+.contact > div img {
+  height: 25px;
+  transition: transform 0.2s;
+  margin-right: 10px;
 }
 
-.formation > div.description {
-  padding-left: min(max(10px, 2vw), 30px);
+.contact > div img:hover,
+.pied img:hover {
+  transform: scale(1.3);
 }
 
-.formation > div > p {
-  margin-top: 0;
-  margin-bottom: min(7px, 1vh);
+.contact > div a {
+  text-decoration: none;
+  color: var(--header-font-color);
 }
-
-.formation > div > p:first-of-type {
-  font-weight: 800;
-}
-
-#competences li img {
-  padding: 5px;
-  background-color: rgb(19, 19, 19);
-  border-radius: 10px;
-  height: 20px;
-  margin-bottom: -8px;
-  margin-right: 5px;
-}
+/*#endregion*/
+/* END FOOTER REGION */
