@@ -32,96 +32,138 @@
             document.getElementById("age").innerHTML = "Âge : " + ecart.years + " ans ";
         }
     </script>
-    </head>
-    
-    <body>
-        <header>
-            <div>
-                <a href="index.html"><img src="img/navbar/accueil.png" alt="accueil"> Accueil </a>
-            </div>
-            <div>
-                <a href="common/projects.html"><img src="img/navbar/portefolio.png" alt="portfolio"> Portfolio</a>
-            </div>
-            <div>
-                <a href="common/contact.html"><img src="img/navbar/contact.png" alt="contact"> Contact</a>
-            </div>
-        </header>
+</head>
 
-        <img id="profil" src="img/profil/luc.png" alt="photo de profil">
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="img/navbar/accueil.png" alt="accueil"> Accueil </a>
+        </div>
+        <div>
+            <a href="common/projects.html"><img src="img/navbar/portefolio.png" alt="portfolio"> Portfolio</a>
+        </div>
+        <div>
+            <a href="common/contact.html"><img src="img/navbar/contact.png" alt="contact"> Contact</a>
+        </div>
+    </header>
 
-        <div class="content">
-            <div class="information">
-                <h2>Informations civiles</h2>
-                <ul>
-                    <li>Prénom : Luc</li>
-                    <li>Nom : BRUNGARD</li>
-                    <li id="age"><script>age()</script></li>
-                    <li>Sexe : Homme</li>
-                </ul>
-            </div>
+    <img id="profil" src="img/profil/luc.png" alt="photo de profil">
 
-            <div class="information">
-                <h2>Education</h2>
-                <div class="formation">
-                    <div class="periode">
-                        <p>2019 - 2021</p>
-                    </div>
-                    <div class="description">
-                        <p>DUT Informatique</p>
-                        <p>IUT de Metz Université de Lorraine,</p>
-                        <p>Metz, France</p>
-                        <p>Classement de la 1<sup>ère</sup> année : 9/97</p>
-                        <p>Classement de la 2<sup>ème</sup> année : 15/82</p>
-                    </div>
+    <div class="content">
+        <div class="information">
+            <h2>Informations civiles</h2>
+            <ul>
+                <li>Prénom : Luc</li>
+                <li>Nom : BRUNGARD</li>
+                <li id="age">
+                    <script>age()</script>
+                </li>
+                <li>Sexe : Homme</li>
+            </ul>
+        </div>
+
+        <div class="information">
+            <h2>Education</h2>
+            <div class="formation">
+                <div class="periode">
+                    <p>2021</p>
                 </div>
-                <div class="formation">
-                    <div class="periode">
-                        <p>2019 - 2021</p>
-                        <!-- <p>2016 - 2019</p> -->
-                    </div>
-                    <div class="description">
-                        <p>Baccalauréat général et technologique</p>
-                        <p>Lycée Louis Vincent,</p>
-                        <p>Metz, France</p>
-                        <p>Spécialisation en Sciences de l'ingénieur et Informatique</p>
-                        <p>Avec mention bien</p>
-                    </div>
+                <div class="description">
+                    <p>Licence 3 informatique</p>
+                    <p>Faculté de la MIM</p>
+                    <p>Metz, France</p>
                 </div>
             </div>
+            <div class="formation">
+                <div class="periode">
+                    <p>2019 - 2021</p>
+                </div>
+                <div class="description">
+                    <p>DUT Informatique</p>
+                    <p>IUT de Metz Université de Lorraine,</p>
+                    <p>Metz, France</p>
+                    <p>Classement de la 1<sup>ère</sup> année : 9/97</p>
+                    <p>Classement de la 2<sup>ème</sup> année : 15/82</p>
+                </div>
+            </div>
+            <div class="formation">
+                <div class="periode">
+                    <p>2019 - 2021</p>
+                    <!-- <p>2016 - 2019</p> -->
+                </div>
+                <div class="description">
+                    <p>Baccalauréat général et technologique</p>
+                    <p>Lycée Louis Vincent,</p>
+                    <p>Metz, France</p>
+                    <p>Spécialisation en Sciences de l'ingénieur et Informatique</p>
+                    <p>Avec mention bien</p>
+                </div>
+            </div>
+        </div>
 
-            <div class="information">
-                <h2>Compétences informatiques</h2>
+        <div class="information">
+            <h2>Compétences informatiques</h2>
+            <div class="competences">
+                <h3>Langages informatiques</h3>
                 <ul id="competences">
-                    <li><img src="img/language/mysql-ico.svg"/>Bases de données SQL</li>
-                    <li><img src="img/language/python-ico.svg.png"/>Python | <img src="img/language/java-ico.svg"/>Java | <img src="img/language/c-ico.png"/>C</li>
-                    <li><img src="img/language/php-ico.svg"/>PHP | <img src="img/language/js-ico.png"/>JavaScript | <img src="img/language/html5-ico.svg.png"/>HTML5 | <img src="img/language/css3-ico.svg.png"/> CSS3</li>
+                    <li>
+                        <span><img src="img/language/mysql-ico.svg" />SQL</span>
+                        <span>NoSQL</span>
+                    </li>
+                    <li>
+                        <span><img src="img/language/python-ico.svg.png" />Python</span>
+                        <span><img src="img/language/java-ico.svg" />Java</span>
+                        <span><img src="img/language/c-ico.png" />C</span>
+                        <span>C++</span>
+                    </li>
+                    <li>
+                        <span><img src="img/language/php-ico.svg" />PHP</span>
+                        <span><img src="img/language/js-ico.png" />JavaScript</span>
+                        <span><img src="img/language/html5-ico.svg.png" />HTML5</span>
+                        <span><img src="img/language/css3-ico.svg.png" /> CSS3</span>
+                    </li>
                     <li>x86 ASM</li>
                 </ul>
-            </div>
 
-            <div class="information">
-                <h2>Compétences linguistiques</h2>
-                <ul>
-                    <li>Français : Langue maternelle</li>
-                    <li>Anglais : Intermédiaire</li>
-                    <li>Allemand : Débutant</li>
-                </ul>
-            </div>
-
-            <div class="information">
-                <h2>Loisirs</h2>
-                <ul>
+                <h3>Logiciels</h3>
+                <ul id="competences">
                     <li>
-                        <img src="img/profil/prog.png" />
-                        Programmation
+                        <span>Gimp</span>
+                        <span>LibreOffice</span>
                     </li>
-                    <li> <img src="img/profil/sax.png" /> Musique</li>
-                    <li style="font-style:italic">Membre de 3 orchestres</li>
-                    <li> <img src="img/profil/volleyball.png" /> Volleyball</li>
-                    <li> <img src="img/profil/book.png" /> Lecture</li>
-                    <li> <img src="img/profil/videogames.png" /> Jeux vidéo</li>
+                    <li>
+                        <span>Visual Studio</span>
+                        <span>Visual Studio Code</span>
+                        <span>Git</span>
+                    </li>
                 </ul>
             </div>
         </div>
-    </body>
+
+        <div class="information">
+            <h2>Compétences linguistiques</h2>
+            <ul>
+                <li>Français : Langue maternelle</li>
+                <li>Anglais : Intermédiaire</li>
+                <li>Allemand : Débutant</li>
+            </ul>
+        </div>
+
+        <div class="information">
+            <h2>Loisirs</h2>
+            <ul>
+                <li>
+                    <img src="img/profil/prog.png" />
+                    Programmation
+                </li>
+                <li> <img src="img/profil/sax.png" /> Musique</li>
+                <li style="font-style:italic">Membre de 3 orchestres</li>
+                <li> <img src="img/profil/volleyball.png" /> Volleyball</li>
+                <li> <img src="img/profil/book.png" /> Lecture</li>
+                <li> <img src="img/profil/videogames.png" /> Jeux vidéo</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
 </html>
