@@ -90,7 +90,7 @@ h3 {
   top: max(min(15vh, 55px), 45px);
   right: max(3vw, 10px);
 
-  width: min(max(10vh, 10vw), 150px);
+  width: min(max(13vh, 13vw), 170px);
   object-fit: contain;
   border-radius: 10%;
 }
