@@ -35,6 +35,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     //         projectDiv.appendChild(projectContent)
     //     }
     // }
+
+
 })
 
 function roule(varchar) {
