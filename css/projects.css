@@ -7,7 +7,7 @@
 }
 
 .semestre {
-   color: var(--body-font-color);
+   color: var(--information-font-color);
    /* Between 14px and 18px */
    width: 95%;
 }
