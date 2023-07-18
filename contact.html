@@ -1,36 +1,37 @@
 <html>
-
-<head>
-    <link rel="stylesheet" href="../css/contact.css" media="screen and (min-device-width: 621px)">
-    <link rel="stylesheet" href="../css/contact_mobile.css" media="screen and (max-device-width: 620px)">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Contact</title>
+    <head>
+        <link rel="stylesheet" href="css/global.css" media="screen and (min-device-width: 621px)">
+        <link rel="stylesheet" href="css/contact.css" media="screen and (min-device-width: 621px)">
+        <link rel="stylesheet" href="css/contact_mobile.css" media="screen and (max-device-width: 620px)">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Contact</title>
+        
+        <script src="components/header/header.js" type="text/javascript"></script>
+        <script src="js/contact.js" type="text/javascript" defer></script>
     </head>
     
     <body>
-        <header>
-            <div>
-                <a href="index.html"><img src="../img/navbar/accueil.png" alt="accueil"> Accueil </a>
-            </div>
-            <div>
-                <a href="projects.html"><img src="../img/navbar/portefolio.png" alt="portfolio"> Portfolio</a>
-            </div>
-            <div>
-                <a href="contact.html"><img src="../img/navbar/contact.png" alt="contact"> Contact</a>
-            </div>
-        </header>
+        <header-component></header-component>
 
         <div class="contact">
             <div>
                 <a href="mailto:luc.brungard@laposte.net" target="_blank">
-                    <img src="../img/contact/mail.png" alt="Mail">
+                    <i class="fa-solid fa-envelope fa-xl" style="color: #ff963c;"></i>
                     luc.brungard@laposte.net
                 </a>
             </div>
 
             <div>
                 <a href="https://github.com/LucBrungard" target="_blank">
-                    <img src="../img/contact/github.svg.png" alt="Github">
+                    <i class="fa-brands fa-github fa-xl" style="color: #ff963c;"></i>
                     https://github.com/LucBrungard
                 </a>
             </div>
@@ -38,7 +39,7 @@
             <div>
                 <a>
                     <span title="Luc#0239">
-                        <img src="../img/contact/discord.png" alt="Discord" id="discord">
+                        <i class="fa-brands fa-discord fa-xl" style="color: #ff963c;"></i>
                         Luc#0239
                     </span>
                 </a>
@@ -46,7 +47,7 @@
 
             <div>
                 <a href="https://www.linkedin.com/in/luc-brungard-470572222/" target="_blank">
-                    <img src="../img/contact/linkedin.png" alt="LinkedIn">
+                    <i class="fa-brands fa-linkedin fa-xl" style="color: #ff963c;"></i>
                     https://www.linkedin.com/in/luc-brungard-470572222/
                 </a>
             </div>
