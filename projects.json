@@ -1,0 +1,121 @@
+{
+    "Semestre 1": [
+        {
+            "title": "Projet Nim",
+            "description": "Mise en application des acquis dans le domaine de l'analyse et de la programmation dans un travail de groupe.",
+            "image": "nim.PNG",
+            "duration": "6 semaines",
+            "group-size": 3,
+            "languages": [
+                "C"
+            ],
+            "links": [
+                "https://github.com/LucBrungard/ProjetC_Nim"
+            ]
+        }
+    ],
+    "Semestre 2": [
+        {
+            "title": "Vidéothèque",
+            "description": "Modélisation complète d'un problème avec UML et sa mise en œuvre en Java.",
+            "image": "videotheque.png",
+            "duration": "10 semaines",
+            "group-size": 2,
+            "languages": [
+                "Java",
+                "Git"
+            ],
+            "links": [
+                "https://github.com/LucBrungard/Projet_Java_Videotheque"
+            ]
+        }
+    ],
+    "Semestre 3": [
+        {
+            "title": "Projet CPOA",
+            "description": "Développer un logiciel en suivant les préceptes de l'agilité et mettant en œuvre un ensemble de bonnes pratiques.",
+            "image": "cpoa.PNG.jpg",
+            "duration": "8 semaines",
+            "group-size": 2,
+            "languages": [
+                "Java",
+                "JavaFX",
+                "JUnit",
+                "MySQL",
+                "Git"
+            ],
+            "links": [
+                "https://github.com/LucBrungard/CPOA_THIL_BRUNGARD_Projet"
+            ]
+        },
+        {
+            "title": "Serveur de jeux en local",
+            "description": "Développer un serveur de 3 jeux en local avec interface graphique.",
+            "image": "progrep.PNG",
+            "duration": "6 semaines",
+            "group-size": 3,
+            "languages": [
+                "Java",
+                "JavaFX",
+                "RMI",
+                "Git"
+            ],
+            "links": [
+                "https://github.com/medkan01/ProgRepServeur",
+                "https://github.com/medkan01/ProgRepClient"
+            ]
+        }
+    ],
+    "Semestre 4": [
+        {
+            "title": "Reserv'Ticket",
+            "description": "Logiciel développé en C avec interface console permettant de gérer des billets de concert, dans le but d'un projet scolaire.",
+            "image": "https://www.youtube.com/embed/i2eqesatnww",
+            "duration": "4 semaines",
+            "group-size": 2,
+            "languages": [
+                "C",
+                "Git"
+            ],
+            "links": [
+                "https://github.com/LucBrungard/ProjetSysteme2020"
+            ]
+        }
+    ],
+    "Semestre 5": [
+        {
+            "title": "Projet de compression de données",
+            "description": "Ecriture de 4 algorithmes de compressions de données (BWT, M2F, RLE, HUFFMAN) dans un système de client / serveur en C.",
+            "image": "prjCDD.PNG",
+            "duration": "6 semaines",
+            "group-size": 2,
+            "languages": [
+                "C",
+                "Sockets"
+            ],
+            "links": [
+                "https://github.com/AvaN0x/MIM-bzip2-server"
+            ]
+        },
+        {
+            "title": "Recktails",
+            "description": "Un site qui permet de sélectionner des cocktails,de voir leur recettes et de les ajouter à ses favoris. Une connexion au site permet de sauvegarder les cocktails preférés dans un fichier JSON.",
+            "image": "prjWebMIM.PNG",
+            "duration": "8 semaines",
+            "group-size": 2,
+            "languages": [
+                "PHP",
+                "JavaScript",
+                "HTML 5",
+                "CSS3",
+                "JSON"
+            ],
+            "links": [
+                "https://github.com/AvaN0x/MIM-ProjetWeb"
+            ]
+        }
+    ],
+    "Semestre 6": [],
+    "Semestre 7": [],
+    "Semestre 8": []
+}
