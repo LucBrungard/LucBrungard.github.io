@@ -1,180 +1,73 @@
 :root {
-  --body-backgroud-color: rgb(31, 31, 31);
-  --sidebar-background-color: rgb(19, 19, 19);
-  --header-font-color: #e0e0e0;
-  --title-font-color: rgb(255, 150, 60);
-  --information-font-color: rgb(221, 213, 213);
+   --body-backgroud-color: rgb(31, 31, 31);
+   --sidebar-background-color: rgb(19, 19, 19);
+   --header-font-color: #e0e0e0;
+   --title-font-color: rgb(255, 150, 60);
+   --information-font-color: rgb(221, 213, 213);
 }
 
 body {
-  background-color: var(--body-backgroud-color);
-  font-family: sans-serif;
-  min-width: 150px;
-  margin: 0;
-  font-size: 1rem;
+   background-color: var(--body-backgroud-color);
+   font-family: sans-serif;
+   min-width: 150px;
+   margin: 0;
+   font-size: 1rem;
 }
 
 a:hover {
-  cursor: pointer;
+   cursor: pointer;
 }
-
-/*#region header*/
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-
-  background-color: var(--sidebar-background-color);
-
-  width: 100%;
-  /* Between 40px and 50px */
-  min-height: 40px;
-  height: 7vh;
-  max-height: 50px;
-
-  padding-left: 2%;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  align-items: center;
-
-  font-size: 1.2rem;
-}
-
-header > div {
-  height: 95%;
-
-  background: linear-gradient(
-    45deg,
-    rgba(255, 119, 2, 0) 0.1px,
-    rgba(255, 119, 2, 0) 90%
-  );
-  transition: background-color 0.5s;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-}
-
-header > div img {
-  height: 1em;
-}
-
-header > div a {
-  text-decoration: none;
-  color: var(--header-font-color);
-}
-/*#endregion*/
 
 h2 {
-  width: 100%;
-  font-size: 1.5rem;
-  color: var(--title-font-color);
-  border-bottom: 2px solid var(--title-font-color);
+   width: 100%;
+   font-size: 1.5rem;
+   color: var(--title-font-color);
+   border-bottom: 2px solid var(--title-font-color);
 }
 
 h3 {
-  width: 100%;
-  font-size: 1.2rem;
-  color: var(--title-font-color);
+   width: 100%;
+   font-size: 1.2rem;
+   color: var(--title-font-color);
 }
 
 #profil {
-  position: absolute;
-  top: max(min(15vh, 55px), 45px);
-  right: max(3vw, 10px);
+   position: absolute;
+   top: max(min(15vh, 55px), 45px);
+   right: max(3vw, 10px);
 
-  width: min(max(10vh, 10vw), 150px);
-  object-fit: contain;
-  border-radius: 10%;
+   width: min(max(10vh, 10vw), 150px);
+   object-fit: contain;
+   border-radius: 10%;
 }
 
 .content {
-  padding-top: max(40px, min(7vh, 50px));
-  padding-left: max(3vw, 10px);
+   padding-top: max(40px, min(7vh, 50px));
+   padding-left: max(3vw, 10px);
 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
 }
 
 .information {
-  width: 70%;
-  color: var(--information-font-color);
+   width: 70%;
+   color: var(--information-font-color);
 }
 
 .information ul {
-  list-style: none;
-  padding-left: min(60px, 3vw);
+   list-style: none;
+   padding-left: min(60px, 3vw);
 }
 
 .information li {
-  margin-bottom: min(7px, 1vh);
+   margin-bottom: min(7px, 1vh);
 }
 
 .information img {
-  width: 1em;
+   width: 1em;
 }
 
-.information .competences:not(h2) {
-  padding-left: min(60px, 3vw);
-}
-
-.formation {
-  padding-left: min(60px, 3vw);
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-
-  margin-bottom: min(max(20px, 2vh), 30px);
-}
-
-.formation > div:first-of-type {
-  width: min(20%, 125px);
-}
-
-.formation > div.description {
-  padding-left: min(max(10px, 2vw), 30px);
-}
-
-.formation > div > p {
-  margin-top: 0;
-  margin-bottom: min(7px, 1vh);
-}
-
-.formation > div > p:first-of-type {
-  font-weight: 800;
-}
-
-#competences > li {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-#competences > li > span {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-#competences li img {
-  padding: 5px;
-  background-color: rgb(19, 19, 19);
-  border-radius: 10px;
-  height: 1.1em;
-  margin-right: 5px;
-}
-
-#competences span:not(:last-of-type)::after {
-  content: "|";
-  margin-right: 5px;
-  margin-left: 5px;
-}
+/* .information .competences:not(h2) {
+   padding-left: min(60px, 3vw);
+} */

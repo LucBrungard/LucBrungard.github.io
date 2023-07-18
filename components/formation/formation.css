@@ -1,0 +1,26 @@
+.formation {
+   padding-left: min(60px, 3vw);
+
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+
+   margin-bottom: min(max(20px, 2vh), 30px);
+}
+
+.formation > div:first-of-type {
+   width: min(20%, 125px);
+}
+
+.formation > div.description {
+   padding-left: min(max(10px, 2vw), 30px);
+}
+
+.formation > div > p {
+   margin-top: 0;
+   margin-bottom: min(7px, 1vh);
+}
+
+.formation > div > p:first-of-type {
+   font-weight: 800;
+}

@@ -1,4 +1,5 @@
-class Header extends HTMLElement {
+class Formation extends HTMLElement {
+
     constructor() {
         super();
     }
@@ -7,7 +8,7 @@ class Header extends HTMLElement {
         const host = 'lucbrungard.github.io'
         const rootPath = window.location.href.substring(0, window.location.href.lastIndexOf(host) + host.length)
 
-        fetch(`${rootPath}/components/header/header.html`)
+        fetch(`${rootPath}/components/formation/formation.html`)
             .then((response) => response.text())
             .then((html) => {
                 this.innerHTML = html;
@@ -21,4 +22,4 @@ class Header extends HTMLElement {
     }
 }
 
-customElements.define('header-component', Header);
+customElements.define('formation-component', Formation);

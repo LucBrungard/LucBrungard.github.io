@@ -1,0 +1,25 @@
+.skills > li {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+}
+
+.skills > li > span {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.skills li img {
+   padding: 5px;
+   background-color: rgb(19, 19, 19);
+   border-radius: 10px;
+   height: 1.1em;
+   margin-right: 5px;
+}
+
+.skills span:not(:last-of-type)::after {
+   content: "|";
+   margin-right: 5px;
+   margin-left: 5px;
+}

@@ -1,4 +1,4 @@
-class Header extends HTMLElement {
+class LanguageSkills extends HTMLElement {
     constructor() {
         super();
     }
@@ -7,7 +7,7 @@ class Header extends HTMLElement {
         const host = 'lucbrungard.github.io'
         const rootPath = window.location.href.substring(0, window.location.href.lastIndexOf(host) + host.length)
 
-        fetch(`${rootPath}/components/header/header.html`)
+        fetch(`${rootPath}/components/language-skills/language-skills.html`)
             .then((response) => response.text())
             .then((html) => {
                 this.innerHTML = html;
@@ -15,10 +15,7 @@ class Header extends HTMLElement {
             .catch((error) => {
                 console.warn(error);
             });
-        // const shadowRoot = this.attachShadow({ mode: 'closed' });
-
-        // shadowRoot.appendChild(headerTemplate.content);
     }
 }
 
-customElements.define('header-component', Header);
+customElements.define('language-skills-component', LanguageSkills);
