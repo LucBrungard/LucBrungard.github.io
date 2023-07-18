@@ -28,3 +28,16 @@ body {
 a:hover {
    cursor: pointer;
 }
+
+h2 {
+   width: 100%;
+   font-size: 1.5rem;
+   color: var(--title-font-color);
+   border-bottom: 2px solid var(--title-font-color);
+}
+
+h3 {
+   width: 100%;
+   font-size: 1.2rem;
+   color: var(--title-font-color);
+}
