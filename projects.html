@@ -16,6 +16,23 @@
 
         <script src="components/header/header.js" type="text/javascript"></script>
         <script src="js/projects.js" type="module"></script>
+
+        <script>
+            function roule(varchar) {
+                var element = document.getElementById(varchar);
+            
+                if (element.classList.contains('doitDisparaitre') || !element.classList.contains('doitApparaitre')) {
+                    element.classList.remove('doitDisparaitre');
+                    element.classList.add('doitApparaitre');
+                    document.getElementById(varchar + 'roule').src = "img/deroule.png";
+                }
+                else {
+                    element.classList.remove('doitApparaitre');
+                    element.classList.add('doitDisparaitre');
+                    document.getElementById(varchar + 'roule').src = "img/enroule.png";
+                }
+            }
+        </script>
     </head>
     
     <body>
