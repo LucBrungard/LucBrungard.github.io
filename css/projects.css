@@ -1,176 +1,100 @@
-:root {
-  --body-backgroud-color: rgb(31, 31, 31);
-  --sidebar-background-color: rgb(19, 19, 19);
-  --header-font-color: #e0e0e0;
-  --projet-background-color: rgb(19, 19, 19);
-  --body-font-color: rgb(221, 213, 213);
-}
-
-body {
-  background-color: var(--body-backgroud-color);
-  font-family: sans-serif;
-  min-width: 150px;
-  margin: 0;
-  font-size: 1rem;
-}
-
-a:hover {
-  cursor: pointer;
-}
-
-/* HEADER REGION */
-/*#region header*/
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-
-  background-color: var(--sidebar-background-color);
-
-  width: 100%;
-  /* Between 40px and 50px */
-  min-height: 40px;
-  height: 7vh;
-  max-height: 50px;
-
-  padding-left: 2%;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  align-items: center;
-
-  font-size: 1.2rem;
-}
-
-header > div {
-  height: 95%;
-
-  background: linear-gradient(
-    45deg,
-    rgba(255, 119, 2, 0) 0.1px,
-    rgba(255, 119, 2, 0) 90%
-  );
-  transition: background-color 0.5s;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-}
-
-header > div img {
-  height: 1em;
-}
-
-header > div a {
-  text-decoration: none;
-  color: var(--header-font-color);
-}
-/*#endregion*/
-/* END HEADER REGION */
-
 .projets {
-  padding-top: max(40px, min(7vh, 50px));
+   padding-top: max(40px, min(7vh, 50px));
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .semestre {
-  color: var(--body-font-color);
-  /* Between 14px and 18px */
-  width: 95%;
+   color: var(--body-font-color);
+   /* Between 14px and 18px */
+   width: 95%;
 }
 
 .projet {
-  background-color: var(--projet-background-color);
-  border-left: 5px rgba(255, 150, 60, 1) solid;
-  margin-left: 2%;
-  margin-bottom: 5vh;
+   background-color: var(--projet-background-color);
+   border-left: 5px rgba(255, 150, 60, 1) solid;
+   margin-left: 2%;
+   margin-bottom: 5vh;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .projet .pied {
-  width: 75%;
-  height: 15%;
-  border-top: 2px rgba(255, 150, 60, 1) solid;
+   width: 75%;
+   height: 15%;
+   border-top: 2px rgba(255, 150, 60, 1) solid;
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
 
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-top: 5px;
-  padding-bottom: 5px;
+   padding-left: 2%;
+   padding-right: 2%;
+   padding-top: 5px;
+   padding-bottom: 5px;
 
-  margin-top: 5px;
+   margin-top: 5px;
 }
 
 .projet .pied .language {
-  width: 70%;
+   width: 70%;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  gap: 0.5em;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   gap: 0.5em;
 }
 
 .projet .pied .language label {
-  padding: 3px;
-  background-color: rgba(255, 150, 60, 0.8);
-  border-radius: 5px;
+   padding: 3px;
+   background-color: rgba(255, 150, 60, 0.8);
+   border-radius: 5px;
 }
 
 .projet .pied .liens {
-  width: 30%;
-  float: right;
-  text-align: right;
+   width: 30%;
+   float: right;
+   text-align: right;
 }
 
 .projet .pied .liens img {
-  height: 2em;
-  transition: transform 0.2s;
+   height: 2em;
+   transition: transform 0.2s;
 }
 
 .projet > h2 {
-  width: 95%;
-  text-align: center;
+   width: 95%;
+   text-align: center;
 }
 
 .projet > div:first-of-type {
-  width: 95%;
-  max-height: 0;
-  overflow: hidden;
+   width: 95%;
+   max-height: 0;
+   overflow: hidden;
 
-  text-align: center;
+   text-align: center;
 }
 
 .projet > div:first-of-type > img:first-of-type {
-  height: min(400px, 50vh);
-  width: 70vw;
+   height: min(400px, 50vh);
+   width: 70vw;
 
-  object-fit: scale-down;
+   object-fit: scale-down;
 }
 
 .projet > div:first-of-type .description {
-  text-align: left;
+   text-align: left;
 }
 
 .projet > div:first-of-type .description > p > img {
-  height: 1.3em;
-  vertical-align: middle;
+   height: 1.3em;
+   vertical-align: middle;
 }
 
 #projetCroule,
@@ -182,111 +106,111 @@ header > div a {
 #prjSysteme2020roule,
 #projetCDDroule,
 #projetWebS5roule {
-  width: 0.7em;
+   width: 0.7em;
 }
 
 .doitApparaitre {
-  -webkit-animation: deroule 0.6s linear 1 forwards;
-  -moz-animation: deroule 0.6s linear 1 forwards;
-  -o-animation: deroule 0.6s linear 1 forwards;
-  -ms-animation: deroule 0.6s linear 1 forwards;
-  animation: deroule 0.6s linear 1 forwards;
+   -webkit-animation: deroule 0.6s linear 1 forwards;
+   -moz-animation: deroule 0.6s linear 1 forwards;
+   -o-animation: deroule 0.6s linear 1 forwards;
+   -ms-animation: deroule 0.6s linear 1 forwards;
+   animation: deroule 0.6s linear 1 forwards;
 }
 
 .doitDisparaitre {
-  -webkit-animation: enroule 0.6s linear 1 forwards;
-  -moz-animation: enroule 0.6s linear 1 forwards;
-  -o-animation: enroule 0.6s linear 1 forwards;
-  -ms-animation: enroule 0.6s linear 1 forwards;
-  animation: enroule 0.6s linear 1 forwards;
+   -webkit-animation: enroule 0.6s linear 1 forwards;
+   -moz-animation: enroule 0.6s linear 1 forwards;
+   -o-animation: enroule 0.6s linear 1 forwards;
+   -ms-animation: enroule 0.6s linear 1 forwards;
+   animation: enroule 0.6s linear 1 forwards;
 }
 
 @-webkit-keyframes enroule {
-  0% {
-    max-height: 700px;
-  }
-  100% {
-    max-height: 0;
-  }
+   0% {
+      max-height: 700px;
+   }
+   100% {
+      max-height: 0;
+   }
 }
 
 @-moz-keyframes enroule {
-  0% {
-    max-height: 700px;
-  }
-  100% {
-    max-height: 0;
-  }
+   0% {
+      max-height: 700px;
+   }
+   100% {
+      max-height: 0;
+   }
 }
 
 @-o-keyframes enroule {
-  0% {
-    max-height: 700px;
-  }
-  100% {
-    max-height: 0;
-  }
+   0% {
+      max-height: 700px;
+   }
+   100% {
+      max-height: 0;
+   }
 }
 
 @-ms-keyframes enroule {
-  0% {
-    max-height: 700px;
-  }
-  100% {
-    max-height: 0;
-  }
+   0% {
+      max-height: 700px;
+   }
+   100% {
+      max-height: 0;
+   }
 }
 
 @keyframes enroule {
-  0% {
-    max-height: 700px;
-  }
-  100% {
-    max-height: 0;
-  }
+   0% {
+      max-height: 700px;
+   }
+   100% {
+      max-height: 0;
+   }
 }
 
 @-webkit-keyframes deroule {
-  0% {
-    max-height: 0;
-  }
-  100% {
-    max-height: 700px;
-  }
+   0% {
+      max-height: 0;
+   }
+   100% {
+      max-height: 700px;
+   }
 }
 
 @-moz-keyframes deroule {
-  0% {
-    max-height: 0;
-  }
-  100% {
-    max-height: 700px;
-  }
+   0% {
+      max-height: 0;
+   }
+   100% {
+      max-height: 700px;
+   }
 }
 
 @-o-keyframes deroule {
-  0% {
-    max-height: 0;
-  }
-  100% {
-    max-height: 700px;
-  }
+   0% {
+      max-height: 0;
+   }
+   100% {
+      max-height: 700px;
+   }
 }
 
 @-ms-keyframes deroule {
-  0% {
-    max-height: 0;
-  }
-  100% {
-    max-height: 700px;
-  }
+   0% {
+      max-height: 0;
+   }
+   100% {
+      max-height: 700px;
+   }
 }
 
 @keyframes deroule {
-  0% {
-    max-height: 0;
-  }
-  100% {
-    max-height: 700px;
-  }
+   0% {
+      max-height: 0;
+   }
+   100% {
+      max-height: 700px;
+   }
 }

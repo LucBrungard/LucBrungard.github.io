@@ -1,3 +1,15 @@
+@media screen and (min-device-width: 621px) {
+   body {
+      font-size: 1rem;
+   }
+}
+
+@media screen and (max-device-width: 620px) {
+   body {
+      font-size: 1, 5rem;
+   }
+}
+
 :root {
    --body-backgroud-color: rgb(31, 31, 31);
    --sidebar-background-color: rgb(19, 19, 19);
@@ -11,7 +23,6 @@ body {
    font-family: sans-serif;
    min-width: 150px;
    margin: 0;
-   font-size: 1rem;
 }
 
 a:hover {
