@@ -20,7 +20,7 @@ class Profile extends HTMLElement {
 
 customElements.define('profile-component', Profile);
 
-function getAge() {
+function setAge() {
     const DAY_TIME = 3600 * 24 * 1000;
     const today = new Date();
 
@@ -44,11 +44,5 @@ function getAge() {
     // réajuste la date en sortie de boucle
     dateRef.setFullYear(dateRef.getFullYear() - 1);
 
-    return ecart.years
+    document.getElementById("age").innerHTML = `Âge : ${ecart.years} ans`;
 }
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById("age").innerHTML = `Âge : ${getAge()} ans`;
-})
-
