@@ -3,6 +3,9 @@ const headerTemplate = document.createElement('template');
 headerTemplate.innerHTML = '<object type="text/html" data="components/header/header.html" ></object>';
 
 const host = 'lucbrungard.github.io'
+console.log(host)
+console.log(window.location.href.lastIndexOf(host))
+console.log(window.location.href.lastIndexOf(host) + host.length)
 const rootPath = window.location.href.substring(0, window.location.href.lastIndexOf(host) + host.length)
 
 console.log(`${rootPath}/components/header/header.html`)
