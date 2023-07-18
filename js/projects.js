@@ -1,6 +1,10 @@
-import projects from '../projects.json' assert { type: 'json' };
 
 document.addEventListener("DOMContentLoaded", async () => {
+    const host = 'lucbrungard.github.io'
+    const rootPath = window.location.href.substring(0, window.location.href.lastIndexOf(host) + host.length)
+
+    const projects = await (await fetch(`${rootPath}/projects.json`)).json()
+
     const container = document.getElementById('container')
     for (const semester in projects) {
         const semesterTitle = document.createElement("h2")
@@ -24,11 +28,11 @@ function roule(varchar) {
     if (element.classList.contains('doitDisparaitre') || !element.classList.contains('doitApparaitre')) {
         element.classList.remove('doitDisparaitre');
         element.classList.add('doitApparaitre');
-        document.getElementById(varchar + 'roule').src = "../img/deroule.png";
+        document.getElementById(varchar + 'roule').src = "img/deroule.png";
     }
     else {
         element.classList.remove('doitApparaitre');
         element.classList.add('doitDisparaitre');
-        document.getElementById(varchar + 'roule').src = "../img/enroule.png";
+        document.getElementById(varchar + 'roule').src = "img/enroule.png";
     }
 }
